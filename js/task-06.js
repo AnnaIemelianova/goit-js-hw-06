@@ -6,7 +6,7 @@ console.log(inputEl.attributes);
 
 //шукаю значення дата атрибуту інпуту
 const inputDataLength = document.querySelector('input[data-length="6"]');
-const inputLength = inputDataLength.dataset.length;
+const inputLength = Number(inputDataLength.dataset.length);
 console.log(inputLength);
 
 //створюю подію для інпут
@@ -22,4 +22,3 @@ function onInputBlur(event) {
         inputEl.classList.add('invalid');
     }
 }
-
