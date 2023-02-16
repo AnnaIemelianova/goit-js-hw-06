@@ -15,7 +15,7 @@ inputEl.addEventListener('blur', onInputBlur);
 
 //об'єкт події
 function onInputBlur(event) {
-    if (event.target.value.length <= inputLength ) {
+    if (event.target.value.length === inputLength ) {
         inputEl.classList.add('valid');
     } else {
         inputEl.classList.remove('valid');
